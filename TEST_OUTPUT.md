@@ -14,11 +14,9 @@ Command: `python manage.py test`
 Found 11 test(s).
 Creating test database for alias 'default'...
 System check identified no issues (0 silenced).
-.....C:\Users\Shan\Downloads\box_selection_system_starter\box_selection_system\.venv\Lib\site-packages\rest_framework\fields.py:992: UserWarning: min_value should be an integer or Decimal instance.
-  warnings.warn("min_value should be an integer or Decimal instance.")
-......
+...........
 ----------------------------------------------------------------------
-Ran 11 tests in 0.034s
+Ran 11 tests in 0.042s
 
 OK
 Destroying test database for alias 'default'...
