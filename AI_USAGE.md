@@ -1,11 +1,11 @@
 # AI Usage Disclosure
 
-# 1. AI Tools Used
+## 1. AI Tools Used
 
 - ChatGPT (OpenAI): Used to understand the assignment requirements, compare possible solution approaches, plan the Django REST API architecture, assist with implementation and debugging, and review testing and documentation.
 - Other tools: No other AI tools are listed unless they were actually used during development.
 
-# 2. Prompts Used
+## 2. Prompts Used
 
 The following are examples of prompts and requests made during the project. Some descriptions are summaries rather than exact quotations.
 
@@ -20,7 +20,7 @@ The following are examples of prompts and requests made during the project. Some
 
 These examples describe the main areas of assistance used during development. The original conversation transcript is included separately in the submission.
 
-# 3. AI Outputs Accepted or Adapted
+## 3. AI Outputs Accepted or Adapted
 
 I used AI assistance to explore implementation options, plan the project structure, troubleshoot issues, and improve testing and documentation.
 
@@ -30,7 +30,7 @@ The packing module uses a deterministic 3D corner-point heuristic to evaluate bo
 
 I reviewed and tested the implementation rather than relying solely on AI-generated explanations or suggestions.
 
-# 4. Outputs Rejected or Modified
+## 4. Outputs Rejected or Modified
 
 I reviewed the AI-assisted implementation and made changes where necessary. The following are examples of modifications and verification activities performed during development.
 
@@ -40,7 +40,7 @@ I reviewed the AI-assisted implementation and made changes where necessary. The 
 
 The input-validation and box-recommendation examples above describe testing activities, not necessarily rejected AI suggestions. I have not classified a suggestion as rejected unless I actually rejected or changed it.
 
-# 5. Mistakes and Limitations Identified
+## 5. Mistakes and Limitations Identified
 
 The recommendation method uses a heuristic rather than an exhaustive search of all possible packing arrangements. Therefore, it does not guarantee that the selected arrangement is globally optimal.
 
@@ -48,7 +48,7 @@ I also tested invalid inputs and orders that exceeded available box dimensions o
 
 Any additional AI-generated mistakes identified during review should be documented here only if they were actually observed. I have not assumed that a potential limitation or test scenario was an AI mistake without evidence.
 
-# 6. Verification of the Final Code
+## 6. Verification of the Final Code
 
 I used Django's system check, automated tests, and manual API requests to verify the implementation.
 
@@ -59,7 +59,7 @@ Commands executed:
 
 The recorded test run reported 11 automated tests, all passing. The Django system check also reported no issues.
 
-# Manual API Test Scenarios
+### Manual API Test Scenarios
 
 - Submitted a valid order containing multiple products.
 - Submitted a request with a quantity of zero.
@@ -71,7 +71,7 @@ I reviewed the API responses to check validation behaviour and whether the recom
 
 These checks provide evidence for the scenarios tested; they do not establish that every possible input or packing arrangement has been verified.
 
-# 7. Human Review and Responsibility
+## 7. Human Review and Responsibility
 
 I used ChatGPT as an assistance tool during development. I reviewed the implementation, ran tests, investigated validation issues, and examined the limitations of the recommendation approach.
 
