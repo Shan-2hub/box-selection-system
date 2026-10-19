@@ -1,7 +1,13 @@
-Write this reflection yourself; the assignment explicitly says not to use AI to generate it.
+Things I have learned from this Box selection system is:
 
-Consider answering in your own words:
-- What did you learn about Django models, serializers, views, and admin?
-- How does the packing heuristic try rotations and prevent overlap?
-- What test or bug taught you the most?
-- What limitation remains, and what would you improve next?
+1. Django - It helped me to understand how to organize and arrange the web application into separate components. By things like defining the structure of database tables, serializers convert incoming API data into valid python data and responses. API endpoints handles client requests and gives the return responses.
+
+2. Box Selection Logic - The application takes the requested products and its quantities, then it evaluates the available boxes based on the criteria like internal dimensions and its max weight capacity. It also uses a 3D corner point heuristic here to find the suitable ways to arrange and also considers the box's cost when choosing a recommendation.
+
+While looking about this I learned that heuristic can find a practical solution without checking every possible arrangement but as well as it doesn't guarantee the global optimal packing result too.
+
+3. Testing and Debugging - I learned the importance of testing both valid and invalid inputs requests. Because in future if someone gives and invalid request it must raise and validation error right so I learned the need of it. 
+Like testing with Zero quantities and unknown product ID's helped me check the inputs validations.
+Where as working with the oversized products and the weight limits violations helped me to know and verify how system handles orders when there is no suitable box is available.
+I also encountered and serializer warning which said the minimum value type error which I addressed by using decimal values. Running automated tests also helped me cross checking whether the existing functions breaks or not.
+
