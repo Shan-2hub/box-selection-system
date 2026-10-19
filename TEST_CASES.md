@@ -4,17 +4,17 @@ Automated tests are in `inventory/tests.py`.
 
 | ID | Scenario | Expected behavior |
 
-1. TC-01 | Single product fits the cheapest box | Recommend the cheapest qualifying box |
-2. TC-02 | Product requires axis-aligned rotation | Packing succeeds if the rotated dimensions fit |
-| TC-03 | Product is too large for candidate box | Candidate is rejected |
-| TC-04 | Order exceeds a box's weight limit | Box is rejected and a later candidate may be selected |
-| TC-05 | Multiple items fit without overlap | Return a placement for every item |
-| TC-06 | No available box can fit item | Return `found: false` |
-| TC-07 | Empty order | Return HTTP 400 |
-| TC-08 | Unknown product ID | Return HTTP 400 |
-| TC-09 | Duplicate product entries | Return HTTP 400 and request one entry with quantity |
-| TC-10 | Quantity is zero | Return HTTP 400 |
-| TC-11 | Product and box list endpoints | Return HTTP 200 |
+1. | TC-01 | Single product fits the cheapest box | Recommend the cheapest qualifying box |
+2. | TC-02 | Product requires axis-aligned rotation | Packing succeeds if the rotated dimensions fit |
+3. | TC-03 | Product is too large for candidate box | Candidate is rejected |
+4. | TC-04 | Order exceeds a box's weight limit | Box is rejected and a later candidate may be selected |
+5. | TC-05 | Multiple items fit without overlap | Return a placement for every item |
+6. | TC-06 | No available box can fit item | Return `found: false` |
+7. | TC-07 | Empty order | Return HTTP 400 |
+8. | TC-08 | Unknown product ID | Return HTTP 400 |
+9. | TC-09 | Duplicate product entries | Return HTTP 400 and request one entry with quantity |
+10. | TC-10 | Quantity is zero | Return HTTP 400 |
+11. | TC-11 | Product and box list endpoints | Return HTTP 200 |
 
 Run with `python manage.py test`. Add additional tests after you manually review edge cases.
 
