@@ -1,0 +1,7 @@
+Write this reflection yourself; the assignment explicitly says not to use AI to generate it.
+
+Consider answering in your own words:
+- What did you learn about Django models, serializers, views, and admin?
+- How does the packing heuristic try rotations and prevent overlap?
+- What test or bug taught you the most?
+- What limitation remains, and what would you improve next?
