@@ -4,8 +4,8 @@ Automated tests are in `inventory/tests.py`.
 
 | ID | Scenario | Expected behavior |
 
-| TC-01 | Single product fits the cheapest box | Recommend the cheapest qualifying box |
-| TC-02 | Product requires axis-aligned rotation | Packing succeeds if the rotated dimensions fit |
+1. TC-01 | Single product fits the cheapest box | Recommend the cheapest qualifying box |
+2. TC-02 | Product requires axis-aligned rotation | Packing succeeds if the rotated dimensions fit |
 | TC-03 | Product is too large for candidate box | Candidate is rejected |
 | TC-04 | Order exceeds a box's weight limit | Box is rejected and a later candidate may be selected |
 | TC-05 | Multiple items fit without overlap | Return a placement for every item |
